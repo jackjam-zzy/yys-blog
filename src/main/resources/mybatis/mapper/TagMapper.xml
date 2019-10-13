@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jalickli.yys.mapper.TagMapper">
+
+    <resultMap id="TagResultMap" type="com.jalickli.yys.entity.Tag">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <collection property="blogList" ofType="com.jalickli.yys.entity.Blog"
+        select="com.jalickli.yys.mapper.BlogMapper.getBlogByTagId"
+        column="id">
+
+        </collection>
+    </resultMap>
+
+    <select id="com.jalickli.yys.mapper.TagMapper.getTagInfo" resultMap="TagResultMap">
+        SELECT id,name FROM t_tag
+    </select>
+
+</mapper>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:replace="${title}">jalickli博客</title>
+    <link rel="stylesheet" href="../lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="../css/admin_style.css" th:href="@{/css/admin_style.css}">
+</head>
+<body>
+
+<!-- 导航 -->
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <a class="navbar-brand" href="#">
+        <h4>管理后台</h4>
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    我
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">个人中心</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" th:href="@{/admin/logout}">注销</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+<!-- 左侧导航栏 -->
+<div th:fragment="sidebar(n)" class="col-lg-3">
+
+    <div class="card">
+        <div class="card-body">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                博客管理
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" th:classappend="${n==1 || n==2}? 'show'" aria-labelledby="headingOne"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" th:href="@{/admin/blogs}" class="list-group-item list-group-item-action" th:classappend="${n==1}? 'active'">
+                                    博客列表
+                                </a>
+                                <a href="#" th:href="@{/admin/blogs/publish}" class="list-group-item list-group-item-action" th:classappend="${n==2}? 'active'">发布博客</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                分类管理
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" th:classappend="${n==3 || n==4}? 'show'" aria-labelledby="headingTwo"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" th:href="@{/admin/types}" class="list-group-item list-group-item-action" th:classappend="${n==3}? 'active'">
+                                    分类列表
+                                </a>
+                                <a href="#" th:href="@{/admin/types/add}" class="list-group-item list-group-item-action" th:classappend="${n==4}? 'active'">
+                                    添加分类
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                标签管理
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" th:classappend="${n==5 || n==6}? 'show'" aria-labelledby="headingThree"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" th:href="@{/admin/tags}" class="list-group-item list-group-item-action" th:classappend="${n==5}? 'active'">
+                                  标签列表
+                                </a>
+                                <a href="#" th:href="@{/admin/tags/add}" class="list-group-item list-group-item-action" th:classappend="${n==6}? 'active'">添加标签
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                评论管理
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" th:classappend="${n==7}? 'show'" aria-labelledby="headingFour"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action" th:classappend="${n==7}? 'active'">
+                                    删除评论
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                修改密码
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" th:classappend="${n==8}? 'show'" aria-labelledby="headingFive"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action" th:classappend="${n==8}? 'active'">
+                                    修改密码(慎重)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- 底部footer -->
+    <footer th:fragment="footer" class="text-center text-muted bg-dark py-4 mt-4">
+        jalickli博客
+    </footer>
+</body>
+</html>

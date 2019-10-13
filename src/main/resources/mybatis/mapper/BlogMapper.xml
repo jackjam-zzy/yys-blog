@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jalickli.yys.mapper.BlogMapper">
+
+    <select id="com.jalickli.yys.mapper.BlogMapper.getBlogByTagId" resultType="com.jalickli.yys.entity.Blog">
+        SELECT *
+        FROM t_blog a JOIN t_blog_tag b ON a.id=b.blog_id
+        WHERE b.tag_id=#{TagId}
+    </select>
+
+</mapper>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/_fragment :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" th:href="@{../css/bootstrap.min.css}">
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav th:replace="admin/_fragment :: navbar" class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="#">
+            <h4>管理后台</h4>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        我
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">个人中心</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">退出</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- 中间内容 -->
+
+    <!-- 左侧菜单栏 -->
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-3" th:replace="admin/_fragment :: sidebar(1)">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div id="accordion">
+
+
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            博客管理
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                博客列表
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">发布博客</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            分类管理
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            标签管理
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            评论管理
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            修改密码
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 详细页面 -->
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert" th:unless="${#strings.isEmpty(message)}">
+                            <strong>提示：</strong>
+                            <p th:text="${message}"></p>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <!-- 查询表单 -->
+
+
+
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="#" method="POST">
+                                    <div class="form-row">
+
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" placeholder="标题">
+                                        </div>
+                                        <div class="col-5">
+                                            <select class="form-control custom-select">
+                                                <option selected>分类</option>
+                                                <option th:each="type : ${types}" th:text="${type.name}">默认</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input"
+                                                    id="customControlInline">
+                                                <label class="custom-control-label" for="customControlInline">推荐</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <button type="submit" class="form-control btn btn-primary">搜索</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <!-- 博客列表 -->
+                        <div class="card">
+                            <div class="card-body">
+                                <table class="table table-bordered table-dark">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">标题</th>
+                                            <th scope="col">类型</th>
+                                            <th scope="col">推荐</th>
+                                            <th scope="col">更新时间</th>
+                                            <th scope="col">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr th:each="pInfo : ${pageInfo.list}">
+                                            <th th:text="${pageInfo.list.indexOf(pInfo)}+${pageInfo.startRow}">1</th>
+                                            <td th:text="${pInfo.title}">阴阳师怪物分布</td>
+                                            <td th:text="${pInfo.type.name}">所属分类</td>
+                                            <td th:text="${pInfo.recommend}==true?'是':'否'">是</td>
+                                            <td th:text="${pInfo.modifyTime}">2018-08-08 19:20</td>
+                                            <td>
+                                                <a href="#" th:href="@{/admin/blogs/edit/{id}(id=${pInfo.id})}" class="btn btn btn-outline-success">编辑</a>
+                                                <a href="#" th:href="@{/admin/blogs/delete/{id}(id=${pInfo.id})}" class="btn btn btn-outline-danger">删除</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="d-flex justify-content-center">
+
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <!-- 上一页 -->
+                                            <li class="page-item" th:classappend="${pageInfo.isFirstPage}? 'disabled'">
+                                                <a class="page-link" href="#" th:href="@{/admin/blogs?pageNum=}+${pageInfo.prePage}" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                            </li>
+                                            <!-- 中间页数 -->
+                                            <li class="page-item" th:classappend="${nav == pageInfo.pageNum}? 'active'" th:each="nav:${pageInfo.navigatepageNums}">
+                                                <a class="page-link" th:href="@{/admin/blogs?pageNum=}+${nav}" th:text="${nav}"></a>
+                                            </li>
+
+                                            <!-- 下一页 -->
+                                            <li class="page-item" th:classappend="${pageInfo.isLastPage }? 'disabled'">
+                                                <a class="page-link" href="#" th:href="@{/admin/blogs?pageNum=}+${pageInfo.nextPage}" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                                <div>
+                                    当前第 [[${pageInfo.pageNum}]]页,共 [[${pageInfo.pages}]] 页.一共 [[${pageInfo.total}]] 条记录
+                                </div>
+
+
+
+
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                    <a href="#" class="btn btn-primary">添加</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 底部footer -->
+    <footer th:replace="admin/_fragment :: footer" class="text-center text-muted bg-dark py-4 mt-4">
+        jalickli博客
+    </footer>
+
+    <!--javascript-->
+    <script type="text/javascript" src="../js/jquery.slim.min.js" th:src="@{/js/jquery.slim.min.js}"></script>
+    <script type="text/javascript" src="../js/popper.min.js" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+
+</html>

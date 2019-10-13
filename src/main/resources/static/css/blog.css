@@ -1,0 +1,77 @@
+body {
+    background: url("../img/bg.png") !important;
+}
+
+.c-p1 {
+    height: 50px!important;
+    text-indent:2em!important;
+    overflow: hidden !important;
+    text-overflow: ellipsis!important;
+    display: -webkit-box!important;
+    -webkit-line-clamp: 2!important;
+    -webkit-box-orient: vertical!important;
+}
+
+.card-bg{
+    background-color: #999999;
+}
+
+
+/* blog */
+.c-bg-pink {
+    background-color: #FFE4E1 !important;
+}
+.c-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+.c-right-buttom {
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+/* type */
+.c-fontsize {
+    font-size: 35px !important;
+}
+.c-tag-color {
+    background-color: #cccccc !important;
+}
+.c-card-width {
+    width: 100% !important;
+}
+
+/* tab */
+.c-fontsize {
+    font-size: 35px !important;
+}
+.c-tag-color {
+    background-color: #cccccc !important;
+}
+.c-card-width {
+    width: 100% !important;
+}
+
+/* index */
+c-bg {
+    background: url("../img/bg.png") !important;
+}
+
+.c-pd-tag {
+    padding-left: 50% !important;
+}
+
+.c-title-color {
+    background-color: #FFE4E1 !important;
+}
+
+/* archive */
+.c-fontsize {
+    font-size: 35px !important;
+}
+.c-tag-color {
+    background-color: #cccccc !important;
+}
+.c-card-width {
+    width: 100% !important;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragment :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jalickli博客 - 标签</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav th:replace="_fragment :: navbar(3)" class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="#">
+            <h4>博客</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">分类</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">标签</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">归档</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">关于我</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        我
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">个人中心</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">退出</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="搜索文章、标签" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+            </form>
+        </div>
+    </nav>
+    <!-- 中间内容 -->
+
+    <div class="container mt-3">
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 pt-2">
+                        <h2>标签</h2>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-9">
+                        <p>共<span class="c-fontsize">88</span>篇</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <!-- 分类标签 -->
+                <div>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark border-danger">
+                        自然科学 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        人文科学 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        毒奶 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        心灵鸡汤 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        六学家 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        自然科学 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        人文科学 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        毒奶 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        心灵鸡汤 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        六学家 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        自然科学 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        人文科学 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        毒奶 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        心灵鸡汤 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                    <a href="#" class="btn c-tag-color mb-4 text-dark">
+                        六学家 <span class="badge badge-light">9</span>
+                        <span class="sr-only">unread messages</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <!-- 对应分类的文章 -->
+                <div class="card c-card-width">
+                    <img class="card-img-top" src="img/type-card.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="float-right">
+                            <span class="badge badge-pill badge-secondary">阴阳师</span>
+                            <span class="badge badge-pill badge-info">辉夜姬</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 一行上的2卡片 -->
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card c-card-width">
+                            <img class="card-img-top" src="img/type-card.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="float-right">
+                                    <span class="badge badge-pill badge-secondary">阴阳师</span>
+                                    <span class="badge badge-pill badge-info">辉夜姬</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card c-card-width">
+                            <img class="card-img-top" src="img/type-card.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="float-right">
+                                    <span class="badge badge-pill badge-secondary">阴阳师</span>
+                                    <span class="badge badge-pill badge-info">辉夜姬</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card c-card-width">
+                            <img class="card-img-top" src="img/type-card.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="float-right">
+                                    <span class="badge badge-pill badge-secondary">阴阳师</span>
+                                    <span class="badge badge-pill badge-info">辉夜姬</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card c-card-width">
+                            <img class="card-img-top" src="img/type-card.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
+                                    the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="float-right">
+                                    <span class="badge badge-pill badge-secondary">阴阳师</span>
+                                    <span class="badge badge-pill badge-info">辉夜姬</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 分页 -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- 底部footer -->
+    <footer th:replace="_fragment :: footer" class="text-center text-muted bg-dark py-4 mt-4">
+        jalickli博客
+    </footer>
+
+    <!--javascript-->
+    <script type="text/javascript" src="js/jquery.slim.min.js" th:src="@{/js/jquery.slim.min.js}"></script>
+    <script type="text/javascript" src="js/popper.min.js" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+
+</html>

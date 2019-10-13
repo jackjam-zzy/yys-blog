@@ -1,0 +1,321 @@
+2019-09-04 19:19:21.783  INFO 14588 --- [restartedMain] com.jalickli.yys.YysApplication          : Starting YysApplication on DESKTOP-F23TFQ3 with PID 14588 (F:\holiday\yys\target\classes started by jackjam in F:\holiday\yys)
+2019-09-04 19:19:21.803  INFO 14588 --- [restartedMain] com.jalickli.yys.YysApplication          : The following profiles are active: dev
+2019-09-04 19:19:21.973  INFO 14588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-04 19:19:21.973  INFO 14588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-04 19:19:24.616  INFO 14588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-04 19:19:24.686  INFO 14588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-04 19:19:24.696  INFO 14588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-04 19:19:24.806  INFO 14588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-04 19:19:24.806  INFO 14588 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2833 ms
+2019-09-04 19:19:25.686  INFO 14588 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-04 19:19:25.796  INFO 14588 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-04 19:19:26.506  INFO 14588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-04 19:19:26.646  INFO 14588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-09-04 19:19:26.646  INFO 14588 --- [restartedMain] com.jalickli.yys.YysApplication          : Started YysApplication in 5.926 seconds (JVM running for 19.725)
+2019-09-04 19:47:17.197  INFO 14588 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-04 19:47:17.197  INFO 14588 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-04 19:47:17.229  INFO 14588 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2019-09-04 19:47:17.312  INFO 14588 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.index', args=[{}, 1, 5]}
+2019-09-04 19:47:17.412  INFO 14588 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-04 19:47:17.672  INFO 14588 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-04 19:47:17.923  INFO 14588 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 19:47:17.924  INFO 14588 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Return ------ index
+2019-09-04 22:22:29.589  INFO 6328 --- [restartedMain] com.jalickli.yys.YysApplication          : Starting YysApplication on DESKTOP-F23TFQ3 with PID 6328 (F:\holiday\yys\target\classes started by jackjam in F:\holiday\yys)
+2019-09-04 22:22:29.592  INFO 6328 --- [restartedMain] com.jalickli.yys.YysApplication          : The following profiles are active: dev
+2019-09-04 22:22:29.701  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-04 22:22:29.703  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-04 22:22:31.469  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-04 22:22:31.489  INFO 6328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-04 22:22:31.490  INFO 6328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-04 22:22:31.597  INFO 6328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-04 22:22:31.598  INFO 6328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1894 ms
+2019-09-04 22:22:32.285  INFO 6328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-04 22:22:32.383  INFO 6328 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-04 22:22:32.856  INFO 6328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-04 22:22:32.910  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-09-04 22:22:32.914  INFO 6328 --- [restartedMain] com.jalickli.yys.YysApplication          : Started YysApplication in 4.334 seconds (JVM running for 5.697)
+2019-09-04 22:22:39.187  INFO 6328 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-04 22:22:39.187  INFO 6328 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-04 22:22:39.206  INFO 6328 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-09-04 22:22:39.242  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.index', args=[{}, 1, 5]}
+2019-09-04 22:22:39.284  INFO 6328 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-04 22:22:39.390  INFO 6328 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-04 22:22:39.536  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:22:39.536  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Return ------ index
+2019-09-04 22:22:41.933  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/type', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toTag', args=[]}
+2019-09-04 22:22:41.933  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:22:41.933  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Return ------ type
+2019-09-04 22:22:54.171  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/tag', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toType', args=[]}
+2019-09-04 22:22:54.172  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:22:54.173  INFO 6328 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Return ------ tag
+2019-09-04 22:22:54.181 ERROR 6328 --- [http-nio-8088-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8088-exec-1] Exception processing template "tag": Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-04 22:22:54.229 ERROR 6328 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-04 22:24:12.288  INFO 6328 --- [http-nio-8088-exec-9] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/archive', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toArchive', args=[]}
+2019-09-04 22:24:12.288  INFO 6328 --- [http-nio-8088-exec-9] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:24:12.289  INFO 6328 --- [http-nio-8088-exec-9] com.jalickli.yys.aspect.LogAspect        : Return ------ archive
+2019-09-04 22:24:16.966  INFO 6328 --- [http-nio-8088-exec-9] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/tag', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toType', args=[]}
+2019-09-04 22:24:16.967  INFO 6328 --- [http-nio-8088-exec-9] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:24:16.967  INFO 6328 --- [http-nio-8088-exec-9] com.jalickli.yys.aspect.LogAspect        : Return ------ tag
+2019-09-04 22:24:16.970 ERROR 6328 --- [http-nio-8088-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8088-exec-9] Exception processing template "tag": Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-04 22:24:16.973 ERROR 6328 --- [http-nio-8088-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [tag], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-04 22:26:35.961  INFO 5932 --- [restartedMain] com.jalickli.yys.YysApplication          : Starting YysApplication on DESKTOP-F23TFQ3 with PID 5932 (F:\holiday\yys\target\classes started by jackjam in F:\holiday\yys)
+2019-09-04 22:26:35.965  INFO 5932 --- [restartedMain] com.jalickli.yys.YysApplication          : The following profiles are active: dev
+2019-09-04 22:26:36.038  INFO 5932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-04 22:26:36.038  INFO 5932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-04 22:26:37.825  INFO 5932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-04 22:26:37.846  INFO 5932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-04 22:26:37.846  INFO 5932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-04 22:26:37.943  INFO 5932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-04 22:26:37.944  INFO 5932 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1906 ms
+2019-09-04 22:26:38.595  INFO 5932 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-04 22:26:38.692  INFO 5932 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-04 22:26:39.168  INFO 5932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-04 22:26:39.220  INFO 5932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-09-04 22:26:39.223  INFO 5932 --- [restartedMain] com.jalickli.yys.YysApplication          : Started YysApplication in 4.135 seconds (JVM running for 5.316)
+2019-09-04 22:26:52.597  INFO 5932 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-04 22:26:52.597  INFO 5932 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-04 22:26:52.608  INFO 5932 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-04 22:26:52.632  INFO 5932 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/tag', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toTag', args=[]}
+2019-09-04 22:26:52.636  INFO 5932 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:26:52.636  INFO 5932 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Return ------ tag
+2019-09-04 22:26:55.811  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/archive', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toArchive', args=[]}
+2019-09-04 22:26:55.812  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:26:55.812  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : Return ------ archive
+2019-09-04 22:26:56.884  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/archive', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toArchive', args=[]}
+2019-09-04 22:26:56.884  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:26:56.885  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : Return ------ archive
+2019-09-04 22:26:57.264  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/tag', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toTag', args=[]}
+2019-09-04 22:26:57.265  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:26:57.266  INFO 5932 --- [http-nio-8088-exec-6] com.jalickli.yys.aspect.LogAspect        : Return ------ tag
+2019-09-04 22:26:59.154  INFO 5932 --- [http-nio-8088-exec-7] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/type', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toType', args=[]}
+2019-09-04 22:26:59.155  INFO 5932 --- [http-nio-8088-exec-7] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:26:59.155  INFO 5932 --- [http-nio-8088-exec-7] com.jalickli.yys.aspect.LogAspect        : Return ------ type
+2019-09-04 22:27:00.460  INFO 5932 --- [http-nio-8088-exec-5] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/tag', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toTag', args=[]}
+2019-09-04 22:27:00.461  INFO 5932 --- [http-nio-8088-exec-5] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:27:00.461  INFO 5932 --- [http-nio-8088-exec-5] com.jalickli.yys.aspect.LogAspect        : Return ------ tag
+2019-09-04 22:27:01.757  INFO 5932 --- [http-nio-8088-exec-8] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/type', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toType', args=[]}
+2019-09-04 22:27:01.758  INFO 5932 --- [http-nio-8088-exec-8] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:27:01.758  INFO 5932 --- [http-nio-8088-exec-8] com.jalickli.yys.aspect.LogAspect        : Return ------ type
+2019-09-04 22:27:05.584  INFO 5932 --- [http-nio-8088-exec-4] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/tag', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toTag', args=[]}
+2019-09-04 22:27:05.584  INFO 5932 --- [http-nio-8088-exec-4] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-04 22:27:05.585  INFO 5932 --- [http-nio-8088-exec-4] com.jalickli.yys.aspect.LogAspect        : Return ------ tag

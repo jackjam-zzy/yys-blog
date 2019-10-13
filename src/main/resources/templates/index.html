@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="_fragment :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jalickli博客 - 首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav th:replace="_fragment :: navbar(1)" class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="#">
+            <h4>博客</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">分类</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">标签</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">归档</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">关于我</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        我
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">个人中心</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">退出</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="搜索文章、标签" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+            </form>
+        </div>
+    </nav>
+    <!-- 中间内容 -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 mt-5">
+                    <blockquote class="blockquote text-center">
+                        <h3 class="mb-0">博 客</h3>
+                        <footer class="blockquote-footer"><cite title="Source Title">[[${pageInfo.total}]]</cite>篇</footer>
+                    </blockquote>
+
+                    <hr />
+
+                    <!-- 一行上的2卡片 -->
+                    <div class="row mb-3">
+                        <div class="col-md-6 col-sm-12 mb-3" th:each="list:${pageInfo.list}">
+                            <div class="card card-bg">
+                                <div class="card-body">
+                                    <div class="card c-card-width">
+                                        <img class="card-img-top" src="img/type-card.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title" th:text="${list.title}">标题</h5>
+                                            <p class="card-text c-p1" th:text="${list.description}">描述</p>
+                                            <div class="d-flex justify-content-end">
+                                                <span class="badge badge-pill badge-secondary" th:each="taglist:${list.tagList}" th:text="${taglist.name}">阴阳师</span>
+                                            </div>
+                                            <hr/>
+
+                                            <a href="#" th:href="@{/blog/{id}(id=${list.id})}"  class="btn btn-primary">Cat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex justify-content-center">
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <!-- 上一页 -->
+                                <li class="page-item" th:classappend="${pageInfo.isFirstPage}? 'disabled'">
+                                    <a class="page-link" href="#" th:href="@{/?pageNum=}+${pageInfo.prePage}" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <!-- 中间页数 -->
+                                <li class="page-item" th:classappend="${nav == pageInfo.pageNum}? 'active'" th:each="nav:${pageInfo.navigatepageNums}">
+                                    <a class="page-link" th:href="@{/?pageNum=}+${nav}" th:text="${nav}"></a>
+                                </li>
+
+                                <!-- 下一页 -->
+                                <li class="page-item" th:classappend="${pageInfo.isLastPage }? 'disabled'">
+                                    <a class="page-link" href="#" th:href="@{/?pageNum=}+${pageInfo.nextPage}" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <div>
+                        当前第 [[${pageInfo.pageNum}]]页,共 [[${pageInfo.pages}]] 页.一共 [[${pageInfo.total}]] 条记录
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 mt-5">
+                    <!-- 分类 -->
+                    <div class="list-group">
+                        <span
+                            class="list-group-item list-group-item-action justify-content-between d-flex align-items-center c-title-color">
+                            <h5>分类</h5>
+                            <a href="#">More</a>
+                        </span>
+                        <a href="#" th:each=" typelist : ${pageInfoType.list} "
+                            class="list-group-item list-group-item-action justify-content-between d-flex align-items-center">[[${typelist.name}]]<span
+                                class="badge badge-primary badge-pill">[[${typelist.blogList.size()}]]</span></a>
+                    </div>
+
+                    <!-- 标签 -->
+
+                    <div class="list-group mt-5 bg-light">
+                        <span
+                            class="list-group-item list-group-item-action justify-content-between d-flex align-items-center c-title-color">
+                            <h5>标签</h5>
+                            <a href="#">More</a>
+                        </span>
+                        <div class="row my-2" th:each="tagInfoList:${tagInfo.list}">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a class="btn btn-primary" href="#">
+                                    [[${tagInfoList.name}]] <span class="badge badge-light">[[${tagInfoList.blogList.size()}]]</span>
+                                    <span class="sr-only">unread messages</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="list-group mt-5">
+                        <span class="list-group-item list-group-item-action c-title-color">
+                            <h5>最新推荐</h5>
+                        </span>
+                        <div th:each="titleInfo : ${pageInfoTitle.list}">
+                            <a href="#" class="list-group-item list-group-item-action" th:text="${titleInfo.title}">用户故事</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部footer -->
+    <footer th:replace="_fragment :: footer" class="text-center text-muted bg-dark py-4 mt-4">
+        jalickli博客
+    </footer>
+
+    <!--javascript-->
+    <script type="text/javascript" src="js/jquery.slim.min.js" th:src="@{/js/jquery.slim.min.js}"></script>
+    <script type="text/javascript" src="js/popper.min.js" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+
+</html>

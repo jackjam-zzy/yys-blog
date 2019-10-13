@@ -1,0 +1,25 @@
+2019-09-07 17:51:51.966  INFO 10996 --- [restartedMain] com.jalickli.yys.YysApplication          : Starting YysApplication on DESKTOP-F23TFQ3 with PID 10996 (F:\holiday\yys\target\classes started by jackjam in F:\holiday\yys)
+2019-09-07 17:51:51.976  INFO 10996 --- [restartedMain] com.jalickli.yys.YysApplication          : The following profiles are active: dev
+2019-09-07 17:51:52.059  INFO 10996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-07 17:51:52.059  INFO 10996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-07 17:51:53.865  INFO 10996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2019-09-07 17:51:53.885  INFO 10996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-07 17:51:53.885  INFO 10996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-07 17:51:53.985  INFO 10996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-07 17:51:53.985  INFO 10996 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1926 ms
+2019-09-07 17:51:55.240  INFO 10996 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-07 17:51:55.340  INFO 10996 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-07 17:51:55.812  INFO 10996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-07 17:51:55.867  INFO 10996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2019-09-07 17:51:55.867  INFO 10996 --- [restartedMain] com.jalickli.yys.YysApplication          : Started YysApplication in 5.189 seconds (JVM running for 19.789)
+2019-09-07 17:55:39.168  INFO 10996 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-07 17:55:39.168  INFO 10996 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-07 17:55:39.184  INFO 10996 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-09-07 17:55:39.333  INFO 10996 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.index', args=[{}, 1, 5]}
+2019-09-07 17:55:39.459  INFO 10996 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-07 17:55:39.602  INFO 10996 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-07 17:55:39.910  INFO 10996 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-07 17:55:39.910  INFO 10996 --- [http-nio-8088-exec-1] com.jalickli.yys.aspect.LogAspect        : Return ------ index
+2019-09-07 17:55:54.928  INFO 10996 --- [http-nio-8088-exec-4] com.jalickli.yys.aspect.LogAspect        : Request  ----- RequestLog{url='http://localhost:8088/blog/7', ip='0:0:0:0:0:0:0:1', classMethod='com.jalickli.yys.controller.IndexController.toBlog', args=[7, {}]}
+2019-09-07 17:55:54.939  INFO 10996 --- [http-nio-8088-exec-4] com.jalickli.yys.aspect.LogAspect        : ---------- doAfter 2 ----------
+2019-09-07 17:55:54.939  INFO 10996 --- [http-nio-8088-exec-4] com.jalickli.yys.aspect.LogAspect        : Return ------ blog

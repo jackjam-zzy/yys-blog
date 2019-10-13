@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="admin/_fragment :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类新增</title>
+    <link rel="stylesheet" href="../lib/editormd/css/editormd.min.css" th:href="@{../lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" th:href="@{../css/bootstrap.min.css}">
+
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav th:replace="admin/_fragment :: navbar" class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <a class="navbar-brand" href="#">
+            <h4>管理后台</h4>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        我
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">个人中心</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">退出</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- 中间内容 -->
+
+    <!-- 左侧菜单栏 -->
+    <div class="container-fluid mt-4">
+
+        <div class="row">
+            <div class="col-lg-3" th:replace="admin/_fragment :: sidebar(3)">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div id="accordion">
+
+
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            博客管理
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                博客列表
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                发布博客
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            分类管理
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            标签管理
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            评论管理
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            修改密码
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                Cras justo odio
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac
+                                                facilisis
+                                                in</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Morbi leo
+                                                risus</a>
+                                            <a href="#" class="list-group-item list-group-item-action">Porta ac
+                                                consectetur
+                                                ac</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <!-- 详细页面 -->
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-body">
+
+
+
+                        <form action="#" th:action="@{/admin/types/{id}(id=${type.id})}" method="POST">
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupPrepend3">分类</span>
+                                    </div>
+                                    <input type="text" name="name" th:value="${type.name}" class="form-control"  placeholder="分类标题" aria-describedby="inputGroupPrepend3" required>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="reset" class="btn btn-info mr-3">重置</button>
+                                <button type="submit" class="btn btn-primary">保存</button>
+                            </div>
+                        </form>
+                        <!--<form action="#" th:action="@{/admin/types}" method="POST">-->
+                            <!--<div class="form-group">-->
+                                <!--<label for="exampleInputText">分类</label>-->
+                                <!--<input type="text" class="form-control" id="exampleInputText" aria-describedby="TextHelp" placeholder="分类标题" name="name"/>-->
+                                <!--<small id="TextHelp" class="form-text text-muted alert alert-danger" role="alert" th:unless="${#strings.isEmpty(message)}">请输入...</small>-->
+                                <!--<div class="d-flex justify-content-end">-->
+                                    <!--<button type="reset" class="btn btn-info mr-3">重置</button>-->
+                                    <!--<button type="submit" class="btn btn-primary">保存</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</form>-->
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- 底部footer -->
+    <footer class="text-center text-muted bg-dark py-4 mt-4">
+        jalickli博客
+    </footer>
+
+    <!--javascript-->
+    <script type="text/javascript" src="../js/jquery.slim.min.js" th:src="@{/js/jquery.slim.min.js}"></script>
+    <script type="text/javascript" src="../js/popper.min.js" th:src="@{/js/popper.min.js}"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" src="../lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <script type="text/javascript">
+        // 初始化Markdown编辑器
+        var contentEditor;
+
+        $(function () {
+            contentEditor = editormd("md-content", {
+                width: "100%",
+                height: 640,
+                syncScrolling: "single",
+                path: "../../lib/editormd/lib/"
+            });
+
+            /*
+            // or
+            testEditor = editormd({
+                id      : "test-editormd",
+                width   : "90%",
+                height  : 640,
+                path    : "../lib/"
+            });
+            */
+        });
+    </script>
+</body>
+
+</html>

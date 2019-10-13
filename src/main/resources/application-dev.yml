@@ -1,0 +1,34 @@
+#开发环境
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: zzy54188666
+  thymeleaf:
+    cache: false
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+
+
+logging:
+  level:
+    root: info
+    com.imcoding: debug
+  file: log/blog-dev.log
+
+server:
+  port: 8088
+
+# 分页配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
